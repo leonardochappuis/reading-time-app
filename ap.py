@@ -97,6 +97,7 @@ def main():
         'node_modules', 
         'dist',
         'components/ui',
+        '.next'
     ]
     ignored_files = [
         'next-env.d.ts',
