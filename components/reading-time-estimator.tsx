@@ -133,7 +133,7 @@ export default function ReadingTimeEstimator() {
             Reading Time Estimate:
           </h3>
           <p className="text-3xl font-bold text-primary">
-            {readingTimeMinutes} minute{readingTimeMinutes !== 1 ? 's' : ''}
+            {readingTimeMinutes < 1 ? '< 1' : `${Math.ceil(readingTimeMinutes)}`} minute{Math.ceil(readingTimeMinutes) !== 1 ? 's' : ''}
           </p>
           <p className="text-sm text-muted-foreground mt-2">
             Based on {pageCount} pages at {readingSpeed} pages per hour
